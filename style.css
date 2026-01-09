@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #111;
+}
+
+/* LOGIN */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: #fff;
+  padding: 32px;
+  width: 320px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.login-logo {
+  width: 80px;
+  margin-bottom: 16px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.hint {
+  font-size: 12px;
+  margin-top: 8px;
+  color: #777;
+}
+
+/* TOP BAR */
+.topbar {
+  background: #111;
+  color: white;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+}
+
+.brand {
+  margin-left: 12px;
+  font-weight: 600;
+}
+
+.avatar {
+  margin-left: auto;
+  background: #333;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SIDE MENU */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: white;
+  padding-top: 56px;
+  transition: .3s;
+  z-index: 10;
+}
+
+.side-menu a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #111;
+}
+
+.side-menu a.active {
+  background: #eee;
+  font-weight: 500;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.3);
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* CONTENT */
+.content {
+  padding: 16px;
+}
+
+.page {
+  display: none;
+}
+
+.active-page {
+  display: block;
+}
+
+/* COURSES */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.course-card {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 6px 14px rgba(0,0,0,.15);
+}
+
+.course-card span {
+  background: rgba(0,0,0,.6);
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.sidebar-header {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-header img {
+  width: 70px;
+}

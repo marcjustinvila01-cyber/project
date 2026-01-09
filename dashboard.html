@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <!-- Minimalist Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+
+  <!-- Top Bar -->
+  <div class="navbar">
+    <div class="logo">ICI</div>
+    <div class="user">MV</div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a class="active">Home</a>
+    <a>Dashboard</a>
+    <a>My courses</a>
+    <a onclick="logout()">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>My courses</h1>
+
+    <div class="courses">
+      <div class="course">Software Engineering 2</div>
+      <div class="course">Computer Graphics</div>
+      <div class="course">Application Development</div>
+      <div class="course">Technical Writing</div>
+      <div class="course">Statistics & Probability</div>
+      <div class="course">Thesis Writing</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
